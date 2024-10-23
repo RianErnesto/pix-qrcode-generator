@@ -1,0 +1,21 @@
+{
+  "name": "pix-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env index.js",
+    "start": "node --env-file=.env.production index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^3.1.7",
+    "nodemailer": "^6.9.15",
+    "pixbrasil": "^1.0.5",
+    "qrcode": "^1.5.4"
+  }
+}
