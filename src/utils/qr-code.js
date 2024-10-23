@@ -13,7 +13,7 @@ export const saveQRCodeToDisk = async (qrCodeUrl) => {
     const qrCodeImage = qrCodeUrl.split(",")[1]
     const qrCodeBuffer = Buffer.from(qrCodeImage, "base64")
 
-    fs.writeFile("qrcode.png", qrCodeBuffer, (error) => {
+    fs.writeFile("/qrcode/qrcode.png", qrCodeBuffer, (error) => {
         if (error) {
             console.error(error)
         } else {
